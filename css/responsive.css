@@ -1,0 +1,92 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+
+    .header{
+        min-height: 67px;
+    }
+
+    .head{
+        height: 67px;
+        margin: 0;
+    }
+
+    .body{
+        margin-top: calc(67px + 46px);
+    }
+
+    .card-title,
+    .card-text,
+    .btn{
+        font-size: 8px;
+    }
+
+    .header__sort-bar{
+        display: flex;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+
+    .header{
+        padding: 0;
+    }
+
+    .head{
+        width: 100%;
+    }
+
+    .head--logo{
+        width: 100px;
+        order: 2;
+        margin: 0;
+    }
+
+    .search__button{
+        order: 1;
+        right: 0;
+        background-color: transparent;
+    }
+
+    .head--cart{
+        order: 3;
+        margin: 8px 0 0;
+        font-size: 16px;
+    }
+
+    .head--search{
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 76px;
+        z-index: 1;
+        box-shadow: 1px 1px 10px rgb(0 0 0 / 50%);
+        animation: mobileSearch linear 0.3s;
+        display: none;
+    }
+
+    @keyframes mobileSearch {
+        from{
+            top: calc(76px / 2);
+            opacity: 0;
+        }
+
+        to{
+            opacity: 1;
+            top: 76px;
+        }
+    }
+}
