@@ -320,3 +320,55 @@
     transform: translateX(10%);
     font-weight: 600;
 }
+
+.home-filter-item{
+    border-right: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Mobile category menu kéo ngang*/
+.mobile-category{
+    margin-top: 122px;
+    display: none;
+}
+
+.mobile-category__list{
+    display: flex;
+    list-style: none;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile-category__item{
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile-category__item:nth-of-type(3n +1) .mobile-category__link {
+    background-color: lightblue;
+}
+
+.mobile-category__item:nth-of-type(3n +2) .mobile-category__link{
+    background-color: lightcoral;
+}
+
+.mobile-category__item:nth-of-type(3n +3) .mobile-category__link{
+    background-color: lightgreen;
+}
+
+/* Chữ dài vượt quá height thì thành dấu ba chấm */
+.mobile-category__link{
+    --line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+    line-height: var(--line-height);
+    height: calc(var(--line-height)*2);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: center;
+    width: 110px;
+    border-radius: 5px;
+    
+}

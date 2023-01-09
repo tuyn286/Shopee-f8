@@ -4,6 +4,10 @@
         display: none;
     }
 
+    .body{
+        margin-top: 0;
+    }
+
     .header{
         min-height: 67px;
     }
@@ -13,8 +17,8 @@
         margin: 0;
     }
 
-    .body{
-        margin-top: calc(67px + 46px);
+    .mobile-category{
+        display: block;
     }
 
     .card-title,
